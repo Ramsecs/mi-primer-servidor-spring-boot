@@ -1,0 +1,98 @@
+/**
+*{
+    font-family: Arial, "Arial Narrow";
+}
+
+h1{
+    color: red;
+    font-size: 20px;
+}
+
+#titulo-principal{
+    font-size: 20px;
+}
+*/
+
+body{
+    font-family: Arial, "Arial Narrow";
+    background-color: black;
+    color: white;
+
+}
+
+h1, h2, h3, p{
+    text-align: center;
+}
+
+h1{
+    text-shadow: 10px 10px 50px rgba(255,255,255,.9);
+}
+
+a{
+    text-decoration: none;
+    color: springgreen;
+}
+
+#menu-info, #menu-inicial{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+#formacion{
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ddd;
+
+    box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.1);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin: 20px
+}
+
+
+#sobre-mi, #habilidades, #proyectos, #contacto{
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ddd;
+
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.1);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin: 20px
+}
+
+
+.destacado{
+    background-color: #e2f0ff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.tabla-bonita{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabla-bonita th, .tabla-bonita td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-bonita th{
+    background-color: #0056b3;
+    color: #FFF
+}
+
+
+
