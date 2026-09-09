@@ -1,18 +1,3 @@
-/**
-*{
-    font-family: Arial, "Arial Narrow";
-}
-
-h1{
-    color: red;
-    font-size: 20px;
-}
-
-#titulo-principal{
-    font-size: 20px;
-}
-*/
-
 body{
     font-family: Arial, "Arial Narrow";
     background-color: black;
@@ -25,7 +10,8 @@ h1, h2, h3, p{
 }
 
 h1{
-    text-shadow: 10px 10px 50px rgba(255,255,255,.9);
+    text-shadow: 10px 10px 50px rgba(255,255,255,.9),
+    10px 10px 50px rgba(255,255,255,.9);
 }
 
 a{
@@ -57,9 +43,10 @@ a{
 #sobre-mi, #habilidades, #proyectos, #contacto{
     background-color: #fff;
     color: black;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
+    overflow: auto;
 
-    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.2);
 
     border-radius: 20px;
 
@@ -69,12 +56,16 @@ a{
 }
 
 
+
+
 .destacado{
-    background-color: #e2f0ff;
+    background-color: #1e1f26;
+    color: #fff;
     padding: 10px;
     border-radius: 10px;
     text-align: justify;
     font-weight: 500;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
 }
 
 .tabla-bonita{
@@ -92,6 +83,36 @@ a{
 .tabla-bonita th{
     background-color: #0056b3;
     color: #FFF
+}
+
+
+.lista-backend, .lista-frontend{
+    border-radius: 10px;
+    color: #fff;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #1e1f26;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+
+p.tipos-habilidades{
+    margin-right: 30px;
+}
+
+.lista-backend{
+    float: left;
+    margin-left: 50px;
+}
+
+.lista-frontend{
+    float: right;
+    margin-right: 50px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 
