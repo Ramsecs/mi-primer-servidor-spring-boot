@@ -1,7 +1,6 @@
 :root{
     --secondary-color: #1560BD;
-    --text-color: #000;
-    --border: 15px;
+    --links-info: #4A154B;
 }
 
 html{
@@ -27,7 +26,19 @@ header{
     text-align: center;
 }
 
-#menu-inicial a, #menu-info a{
+#menu-inicial a{
+
+    font-weight: bold;
+    color: white;
+    background-color: #1560BD;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+
+#menu-info a{
 
     font-weight: bold;
     background-color: white;
@@ -66,23 +77,35 @@ h1{
 a{
     text-decoration: none;
     transition: 1s;
-    color: var(--secondary-color);
 }
 
-#menu-inicial a:hover, #menu-info a:hover{
+#menu-info a:hover, #menu-inicial a:hover{
     transition: 1s;
     font-size: 18px;
+}
+
+#menu-info a:hover{
     box-shadow: 0px 0px 20px rgba(65, 105, 225, 1),
     0px 0px 20px rgba(65, 105, 225, 1),
     0px 0px 20px rgba(65, 105, 225, 1);
 }
 
-#proyectos a:hover, #contacto a:hover{
+#menu-inicial a:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 225, 1),
+    0px 0px 20px rgba(255, 255, 225, 1),
+    0px 0px 20px rgba(255, 255, 225, 1);
+}
+
+#proyectos a{
+    color: var(--links-info);
+}
+
+#proyectos a:hover{
     transition: 1s;
     font-size: 18px;
-    text-shadow: 0px 0px 20px rgba(65, 105, 225, 1),
-    0px 0px 20px rgba(65, 105, 225, 1),
-    0px 0px 20px rgba(65, 105, 225, 1);
+    text-shadow: 0px 0px 20px rgba(186, 104, 200, 1),
+    0px 0px 20px rgba(186, 104, 200, 1),
+    0px 0px 20px rgba(186, 104, 200, 1);
 }
 
 
@@ -178,7 +201,7 @@ ul li{
     margin-left: 50px;
 }
 
-img{
+#profile{
     width: 100%;
     border-radius: 10px;
     margin-top: 50px;
@@ -190,6 +213,50 @@ img{
     align-items: center;
     padding: 0;
 }
+
+.logo_contactos{
+    height: 30px;
+    width: auto;
+}
+
+#whatsapp{
+    color: #006400;
+}
+
+#whatsapp:hover{
+    text-shadow: 0px 0px 20px rgba(144, 238, 144, 1),
+    0px 0px 20px rgba(144, 238, 144, 1),
+    0px 0px 20px rgba(144, 238, 144, 1);
+}
+
+#telefono{
+    color: #B8860B;
+}
+
+#telefono:hover{
+    text-shadow: 0px 0px 20px rgba(204, 85, 0, .5),
+    0px 0px 20px rgba(204, 85, 0, .5),
+    0px 0px 20px rgba(204, 85, 0, .5);
+}
+
+#correo{
+    color: blue;
+}
+
+#correo:hover{
+    text-shadow: 0px 0px 20px rgba(135, 206, 235, 1),
+    0px 0px 20px rgba(135, 206, 235, 1),
+    0px 0px 20px rgba(135, 206, 235, 1);
+}
+
+#telefono, #correo, #whatsapp{
+    font-weight: bold;
+}
+
+#telefono:hover, #correo:hover, #whatsapp:hover{
+    font-size: 18px;
+}
+
 
 
 /*
