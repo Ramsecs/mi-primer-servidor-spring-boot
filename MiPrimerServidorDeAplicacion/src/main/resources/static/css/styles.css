@@ -1,8 +1,31 @@
+:root{
+    --secondary-color: #e2143f;
+    --text-color: #000;
+    --border: 15px;
+}
+
 body{
     font-family: Arial, "Arial Narrow";
     background-color: black;
     color: white;
+}
 
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #1e1f26;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#menu-info{
+    border-radius: 15px;
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
 }
 
 h1, h2, h3, p{
@@ -16,12 +39,11 @@ h1{
 
 a{
     text-decoration: none;
-    color: springgreen;
+    color: var(--secondary-color);
 }
 
 #menu-info, #menu-inicial{
-    text-align: center;
-    padding-bottom: 20px;
+
 }
 
 
@@ -116,4 +138,23 @@ img{
 }
 
 
+/*
+    Pseudoclases son las interacciones que hacemos
+    :hover - cuando pasamos el mouse sobre el elemento
+    :active - mientras mantenemos el click presionado
+    :focus - click o tab
+    :visited - un link que ha sido visitado
+    :checked - cuando esta activado o seleccionado
+    :diabled - cuando el elemento no esta disponible
+
+
+    :first-child
+    :last-child
+    :-nth-child(n)
+
+    Pseudo-elementos
+    ::before - inyecta contenido antes del elemento
+    ::after - inyecta contenido antes del elemento
+
+*/
 
