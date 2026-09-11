@@ -1,6 +1,13 @@
 :root{
     --secondary-color: #1560BD;
     --links-info: #4A154B;
+    --blue-color: #0056b3;
+}
+::selection {
+  background-color: transparent;
+  text-shadow: 0 0 10px rgba(0, 51, 153, 1),
+  0 0 10px rgba(0, 51, 153, 1),
+  0 0 10px rgba(0, 51, 153, 1);
 }
 
 html{
@@ -139,10 +146,8 @@ a{
     margin: 20px
 }
 
-
-
-
 .destacado{
+    font-size: 20px;
     background-color: #1e1f26;
     color: #fff;
     margin-top: 30px;
@@ -168,7 +173,7 @@ a{
 }
 
 .tabla-bonita th{
-    background-color: #0056b3;
+    background-color: var(--blue-color);
     color: #FFF
 }
 
@@ -208,10 +213,22 @@ ul li{
 }
 
 #formacion ol{
+    color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+    gap: 5%;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #1e1f26;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#formacion ol li::first-letter{
+    color: var(--blue-color);
 }
 
 .logo_contactos{
@@ -255,6 +272,13 @@ ul li{
 
 #telefono:hover, #correo:hover, #whatsapp:hover{
     font-size: 18px;
+}
+
+#proyectos ul{
+    margin-top: 30px;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
 }
 
 
